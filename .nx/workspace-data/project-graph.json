@@ -1,0 +1,279 @@
+{
+  "nodes": {
+    "test-assets-android": {
+      "name": "test-assets-android",
+      "type": "lib",
+      "data": {
+        "root": "packages/test-assets-android",
+        "name": "test-assets-android",
+        "tags": ["npm:public", "npm:NativeScript", "npm:JavaScript", "npm:TypeScript", "npm:iOS", "npm:Android"],
+        "metadata": {
+          "targetGroups": {},
+          "description": "Add a plugin description"
+        },
+        "targets": {
+          "nx-release-publish": {
+            "dependsOn": ["^nx-release-publish"],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          },
+          "build": {
+            "executor": "@nx/js:tsc",
+            "inputs": ["production", "^production"],
+            "cache": true,
+            "options": {
+              "outputPath": "dist/packages/test-assets-android",
+              "tsConfig": "packages/test-assets-android/tsconfig.json",
+              "packageJson": "packages/test-assets-android/package.json",
+              "main": "packages/test-assets-android/index.d.ts",
+              "assets": [
+                "packages/test-assets-android/*.md",
+                "packages/test-assets-android/index.d.ts",
+                "LICENSE",
+                {
+                  "glob": "**/*",
+                  "input": "packages/test-assets-android/platforms/",
+                  "output": "./platforms/"
+                }
+              ],
+              "dependsOn": [
+                {
+                  "target": "build.all",
+                  "projects": "dependencies"
+                }
+              ]
+            },
+            "configurations": {}
+          },
+          "build.all": {
+            "executor": "nx:run-commands",
+            "options": {
+              "commands": ["node tools/scripts/build-finish.ts test-assets-android"],
+              "parallel": false
+            },
+            "outputs": ["{workspaceRoot}/dist/packages/test-assets-android"],
+            "dependsOn": [
+              {
+                "target": "build.all",
+                "projects": "dependencies"
+              },
+              {
+                "target": "build",
+                "projects": "self"
+              }
+            ],
+            "configurations": {}
+          },
+          "focus": {
+            "executor": "nx:run-commands",
+            "options": {
+              "commands": ["nx g @nativescript/plugin-tools:focus-packages test-assets-android"],
+              "parallel": false
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "executor": "@nx/eslint:eslint",
+            "options": {
+              "lintFilePatterns": ["packages/test-assets-android/**/*.ts"]
+            },
+            "configurations": {}
+          }
+        },
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "library",
+        "sourceRoot": "packages/test-assets-android",
+        "implicitDependencies": []
+      }
+    },
+    "demo-angular": {
+      "name": "demo-angular",
+      "type": "app",
+      "data": {
+        "root": "apps/demo-angular",
+        "name": "demo-angular",
+        "tags": ["npm:public"],
+        "metadata": {
+          "targetGroups": {}
+        },
+        "targets": {
+          "nx-release-publish": {
+            "dependsOn": ["^nx-release-publish"],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          },
+          "build": {
+            "executor": "@nativescript/nx:build",
+            "inputs": ["production", "^production"],
+            "cache": true,
+            "options": {
+              "noHmr": true,
+              "production": true,
+              "uglify": true,
+              "release": true,
+              "forDevice": true
+            },
+            "dependsOn": [
+              {
+                "target": "build.all",
+                "dependencies": true
+              }
+            ],
+            "configurations": {}
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
+            "cache": true,
+            "options": {},
+            "configurations": {}
+          },
+          "ios": {
+            "executor": "@nativescript/nx:build",
+            "options": {
+              "platform": "ios"
+            },
+            "dependsOn": [
+              {
+                "target": "build.all",
+                "dependencies": true
+              }
+            ],
+            "configurations": {}
+          },
+          "android": {
+            "executor": "@nativescript/nx:build",
+            "options": {
+              "platform": "android"
+            },
+            "dependsOn": [
+              {
+                "target": "build.all",
+                "dependencies": true
+              }
+            ],
+            "configurations": {}
+          },
+          "clean": {
+            "executor": "@nativescript/nx:build",
+            "options": {
+              "clean": true
+            },
+            "configurations": {}
+          }
+        },
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/demo-angular/src",
+        "projectType": "application",
+        "prefix": "demo",
+        "implicitDependencies": []
+      }
+    },
+    "demo": {
+      "name": "demo",
+      "type": "app",
+      "data": {
+        "root": "apps/demo",
+        "name": "demo",
+        "tags": ["npm:public"],
+        "metadata": {
+          "targetGroups": {},
+          "description": "NativeScript Application"
+        },
+        "targets": {
+          "nx-release-publish": {
+            "dependsOn": ["^nx-release-publish"],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          },
+          "build": {
+            "executor": "@nativescript/nx:build",
+            "inputs": ["production", "^production"],
+            "cache": true,
+            "options": {
+              "noHmr": true,
+              "production": true,
+              "uglify": true,
+              "release": true,
+              "forDevice": true
+            },
+            "dependsOn": [
+              {
+                "target": "build.all",
+                "dependencies": true
+              }
+            ],
+            "configurations": {}
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
+            "cache": true,
+            "options": {},
+            "configurations": {}
+          },
+          "ios": {
+            "executor": "@nativescript/nx:build",
+            "options": {
+              "platform": "ios"
+            },
+            "dependsOn": [
+              {
+                "target": "build.all",
+                "dependencies": true
+              }
+            ],
+            "configurations": {}
+          },
+          "android": {
+            "executor": "@nativescript/nx:build",
+            "options": {
+              "platform": "android"
+            },
+            "dependsOn": [
+              {
+                "target": "build.all",
+                "dependencies": true
+              }
+            ],
+            "configurations": {}
+          },
+          "clean": {
+            "executor": "@nativescript/nx:build",
+            "options": {
+              "clean": true
+            },
+            "configurations": {}
+          }
+        },
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/demo/src",
+        "projectType": "application",
+        "prefix": "demo",
+        "implicitDependencies": []
+      }
+    }
+  },
+  "externalNodes": {},
+  "dependencies": {
+    "test-assets-android": [],
+    "demo-angular": [
+      {
+        "source": "demo-angular",
+        "target": "test-assets-android",
+        "type": "static"
+      }
+    ],
+    "demo": [
+      {
+        "source": "demo",
+        "target": "test-assets-android",
+        "type": "static"
+      }
+    ]
+  },
+  "version": "6.0"
+}

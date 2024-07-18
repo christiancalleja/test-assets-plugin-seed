@@ -5,7 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
-      "@demo/shared": ["../../tools/demo/index.ts"]
+      "@demo/shared": ["../../tools/demo/index.ts"],
+      "@redmint/*": ["../../packages/*"],
+      "@redmint/test-assets-android": ["../../packages/test-assets-android/index.d.ts"]
     }
   }
 }

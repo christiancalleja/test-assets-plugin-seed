@@ -1,0 +1,841 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.3.2",
+  "deps": {
+    "@angular/animations": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/compiler-cli": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "@nativescript/angular": "^17.0.0",
+    "@nativescript/core": "~8.7.0",
+    "@nativescript/plugin-tools": "5.2.5",
+    "@nativescript/types": "~8.7.0",
+    "@nativescript/webpack": "~5.0.5",
+    "@ngtools/webpack": "^17.0.0",
+    "husky": "~9.0.0",
+    "nativescript-vue": "~2.9.0",
+    "nativescript-vue-template-compiler": "~2.9.0",
+    "ng-packagr": "^17.0.0",
+    "rxjs": "~7.8.0",
+    "typescript": "~5.4.0",
+    "zone.js": "~0.14.0",
+    "@angular-devkit/build-angular": "^17.0.0"
+  },
+  "pathMappings": {
+    "@demo/shared": ["tools/demo/index.ts"],
+    "@redmint/*": ["packages/*"],
+    "@redmint/test-assets-android": ["packages/test-assets-android/index.d.ts"]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "test-assets-android": [
+        {
+          "file": "packages/test-assets-android/.eslintrc.json",
+          "hash": "18301323202043197589"
+        },
+        {
+          "file": "packages/test-assets-android/README.md",
+          "hash": "9800626566598597134"
+        },
+        {
+          "file": "packages/test-assets-android/common.ts",
+          "hash": "2584120518213842836"
+        },
+        {
+          "file": "packages/test-assets-android/index.android.ts",
+          "hash": "7775214946241389219"
+        },
+        {
+          "file": "packages/test-assets-android/index.d.ts",
+          "hash": "10045516217050041573"
+        },
+        {
+          "file": "packages/test-assets-android/index.ios.ts",
+          "hash": "49630910175252154"
+        },
+        {
+          "file": "packages/test-assets-android/package.json",
+          "hash": "14559651905760322630"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/README.md",
+          "hash": "5844787483780349452"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-af/add_to_googlepay_button_content.xml",
+          "hash": "1943563630471146354"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-ar/add_to_googlepay_button_content.xml",
+          "hash": "11789485595997295273"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-az/add_to_googlepay_button_content.xml",
+          "hash": "11631599344677696802"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-bg/add_to_googlepay_button_content.xml",
+          "hash": "3500855312304585763"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-bs/add_to_googlepay_button_content.xml",
+          "hash": "13111962792622522715"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-ca/add_to_googlepay_button_content.xml",
+          "hash": "732159178532094233"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-cs/add_to_googlepay_button_content.xml",
+          "hash": "9899973615712148425"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-da/add_to_googlepay_button_content.xml",
+          "hash": "2000707722622803172"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-de/add_to_googlepay_button_content.xml",
+          "hash": "13660194674102075789"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-el/add_to_googlepay_button_content.xml",
+          "hash": "4164815540649159940"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-en/add_to_googlepay_button_content.xml",
+          "hash": "11848501122634162287"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-es/add_to_googlepay_button_content.xml",
+          "hash": "6923266174244247152"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-et/add_to_googlepay_button_content.xml",
+          "hash": "10696776597201063659"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-fi/add_to_googlepay_button_content.xml",
+          "hash": "9122149643540920939"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-fr/add_to_googlepay_button_content.xml",
+          "hash": "12681595451947340839"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-hdpi/googlepay_button_background_image.9.png",
+          "hash": "860770713660906605"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-hr/add_to_googlepay_button_content.xml",
+          "hash": "9576025651082551989"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-hu/add_to_googlepay_button_content.xml",
+          "hash": "4661294304736205401"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-hy/add_to_googlepay_button_content.xml",
+          "hash": "13758885006797629471"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-is/add_to_googlepay_button_content.xml",
+          "hash": "735278658432806242"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-is/pay_with_googlepay_button_content.xml",
+          "hash": "13378796762177681551"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-it/add_to_googlepay_button_content.xml",
+          "hash": "297114796358518299"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-iw/add_to_googlepay_button_content.xml",
+          "hash": "15564950159432304142"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-ja/add_to_googlepay_button_content.xml",
+          "hash": "3975944141189880333"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-ka/add_to_googlepay_button_content.xml",
+          "hash": "13059335405700584666"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-kk/add_to_googlepay_button_content.xml",
+          "hash": "1397626866579802352"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-ko/add_to_googlepay_button_content.xml",
+          "hash": "11046637867036977781"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-ky/add_to_googlepay_button_content.xml",
+          "hash": "5161976383255085039"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-lt/add_to_googlepay_button_content.xml",
+          "hash": "17164008129572167409"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-lv/add_to_googlepay_button_content.xml",
+          "hash": "13665946125588810259"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-mdpi/googlepay_button_background_image.9.png",
+          "hash": "12083797686020688669"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-mk/add_to_googlepay_button_content.xml",
+          "hash": "2707248585596368979"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-ms/add_to_googlepay_button_content.xml",
+          "hash": "10214816186493463780"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-nl/add_to_googlepay_button_content.xml",
+          "hash": "162084878399767930"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-no/add_to_googlepay_button_content.xml",
+          "hash": "16481703251624479255"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-pl/add_to_googlepay_button_content.xml",
+          "hash": "17807159599872037953"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-pt/add_to_googlepay_button_content.xml",
+          "hash": "3850464683891891894"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-ro/add_to_googlepay_button_content.xml",
+          "hash": "5092874595029123513"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-ru/add_to_googlepay_button_content.xml",
+          "hash": "10137570982795197158"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-sk/add_to_googlepay_button_content.xml",
+          "hash": "10618004346330567441"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-sl/add_to_googlepay_button_content.xml",
+          "hash": "2006221985114308204"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-sq/add_to_googlepay_button_content.xml",
+          "hash": "18324930284491694662"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-sr/add_to_googlepay_button_content.xml",
+          "hash": "16776591944514548213"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-sv/add_to_googlepay_button_content.xml",
+          "hash": "10094805063957034281"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-th/add_to_googlepay_button_content.xml",
+          "hash": "9625164961639202749"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-tr/add_to_googlepay_button_content.xml",
+          "hash": "18324037727136051837"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-uk/add_to_googlepay_button_content.xml",
+          "hash": "14270414615942142814"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-uz/add_to_googlepay_button_content.xml",
+          "hash": "9087010824238521993"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-v21/googlepay_button_background.xml",
+          "hash": "11598339595121328757"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-v24/ic_launcher_foreground.xml",
+          "hash": "5267585430962274425"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-vi/add_to_googlepay_button_content.xml",
+          "hash": "5427950402520492597"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-xhdpi/googlepay_button_background_image.9.png",
+          "hash": "4948786341871114122"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-xxhdpi/googlepay_button_background_image.9.png",
+          "hash": "6078400032267764613"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-xxxhdpi/googlepay_button_background_image.9.png",
+          "hash": "14256217812019759604"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable-zu/add_to_googlepay_button_content.xml",
+          "hash": "14500187296023153992"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable/add_to_googlepay_button_content.xml",
+          "hash": "11848501122634162287"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable/googlepay_button_background.xml",
+          "hash": "1362278495870597878"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable/googlepay_button_content.xml",
+          "hash": "14829535989877208575"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable/googlepay_button_overlay.xml",
+          "hash": "11881111189428134958"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/drawable/pay_with_googlepay_button_content.xml",
+          "hash": "4460199049323159060"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/layout/add_to_googlepay_button.xml",
+          "hash": "12918326987370281225"
+        },
+        {
+          "file": "packages/test-assets-android/platforms/android/res/values/googlepay_strings.xml",
+          "hash": "6540775440717386430"
+        },
+        {
+          "file": "packages/test-assets-android/project.json",
+          "hash": "10467955906567903785"
+        },
+        {
+          "file": "packages/test-assets-android/references.d.ts",
+          "hash": "12793571534165304564"
+        },
+        {
+          "file": "packages/test-assets-android/tsconfig.json",
+          "hash": "14781334515182949428"
+        }
+      ],
+      "demo": [
+        {
+          "file": "apps/demo/.eslintrc.json",
+          "hash": "18301323202043197589"
+        },
+        {
+          "file": "apps/demo/.gitignore",
+          "hash": "13360389556088348120"
+        },
+        {
+          "file": "apps/demo/nativescript.config.ts",
+          "hash": "7968460010256171855"
+        },
+        {
+          "file": "apps/demo/package.json",
+          "hash": "14907058408698606193",
+          "deps": ["test-assets-android"]
+        },
+        {
+          "file": "apps/demo/project.json",
+          "hash": "17406199148643988824"
+        },
+        {
+          "file": "apps/demo/references.d.ts",
+          "hash": "14494203148244004188"
+        },
+        {
+          "file": "apps/demo/src/app-root.xml",
+          "hash": "1228340633766009763"
+        },
+        {
+          "file": "apps/demo/src/app.scss",
+          "hash": "18068305607738157392"
+        },
+        {
+          "file": "apps/demo/src/app.ts",
+          "hash": "14616132961627751302"
+        },
+        {
+          "file": "apps/demo/src/main-page.ts",
+          "hash": "2183845860316860793"
+        },
+        {
+          "file": "apps/demo/src/main-page.xml",
+          "hash": "14699793586610527939"
+        },
+        {
+          "file": "apps/demo/src/main-view-model.ts",
+          "hash": "7054993785943847515"
+        },
+        {
+          "file": "apps/demo/src/plugin-demos/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/demo/src/plugin-demos/test-assets-android.ts",
+          "hash": "11444593571205969491"
+        },
+        {
+          "file": "apps/demo/src/plugin-demos/test-assets-android.xml",
+          "hash": "658815585930409948"
+        },
+        {
+          "file": "apps/demo/tsconfig.json",
+          "hash": "14992068786853043240"
+        },
+        {
+          "file": "apps/demo/webpack.config.js",
+          "hash": "16278236907500534115"
+        }
+      ],
+      "demo-angular": [
+        {
+          "file": "apps/demo-angular/.eslintrc.json",
+          "hash": "18301323202043197589"
+        },
+        {
+          "file": "apps/demo-angular/.gitignore",
+          "hash": "6356779776791457366"
+        },
+        {
+          "file": "apps/demo-angular/nativescript.config.ts",
+          "hash": "10359613591539679985"
+        },
+        {
+          "file": "apps/demo-angular/package.json",
+          "hash": "1291383912574707883",
+          "deps": ["test-assets-android"]
+        },
+        {
+          "file": "apps/demo-angular/project.json",
+          "hash": "9429517947039027674"
+        },
+        {
+          "file": "apps/demo-angular/references.d.ts",
+          "hash": "14494203148244004188"
+        },
+        {
+          "file": "apps/demo-angular/src/app-routing.module.ts",
+          "hash": "16970457862494006757"
+        },
+        {
+          "file": "apps/demo-angular/src/app.component.ts",
+          "hash": "14253158381087465766"
+        },
+        {
+          "file": "apps/demo-angular/src/app.module.ts",
+          "hash": "17534684864296802033"
+        },
+        {
+          "file": "apps/demo-angular/src/app.scss",
+          "hash": "5791223818188466794"
+        },
+        {
+          "file": "apps/demo-angular/src/home.component.html",
+          "hash": "7525945218256089459"
+        },
+        {
+          "file": "apps/demo-angular/src/home.component.ts",
+          "hash": "15064508942675044412"
+        },
+        {
+          "file": "apps/demo-angular/src/main.ts",
+          "hash": "2292607309898790412"
+        },
+        {
+          "file": "apps/demo-angular/src/plugin-demos/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/demo-angular/src/plugin-demos/test-assets-android.component.html",
+          "hash": "15976209740144107737"
+        },
+        {
+          "file": "apps/demo-angular/src/plugin-demos/test-assets-android.component.ts",
+          "hash": "2651818613154512398"
+        },
+        {
+          "file": "apps/demo-angular/src/plugin-demos/test-assets-android.module.ts",
+          "hash": "15397259215903927184"
+        },
+        {
+          "file": "apps/demo-angular/src/polyfills.ts",
+          "hash": "6206858245198025400"
+        },
+        {
+          "file": "apps/demo-angular/tsconfig.json",
+          "hash": "2664747734295600792"
+        },
+        {
+          "file": "apps/demo-angular/webpack.config.js",
+          "hash": "1818744884088051133"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "3227478162769556925"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "6767855003065356103"
+      },
+      {
+        "file": ".husky/.gitignore",
+        "hash": "10106645302852536800"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "3256474109941491088"
+      },
+      {
+        "file": ".npsrc",
+        "hash": "17821835317827626739"
+      },
+      {
+        "file": ".nxignore",
+        "hash": "3831242772500302282"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "8715731170970327591"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "7578410453145130682"
+      },
+      {
+        "file": ".travis.yml",
+        "hash": "10452619469635967541"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "5392349255094676782"
+      },
+      {
+        "file": "README.md",
+        "hash": "12690270278689209310"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "4491835597037050830"
+      },
+      {
+        "file": "nx.json",
+        "hash": "13424818028642792865"
+      },
+      {
+        "file": "package.json",
+        "hash": "12696763556886765806"
+      },
+      {
+        "file": "packages/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "references.d.ts",
+        "hash": "6197716509271907085"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/app.gradle",
+        "hash": "3897388874494994234"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/AndroidManifest.xml",
+        "hash": "15006463872550393125"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-hdpi/background.png",
+        "hash": "11842682559921566882"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-hdpi/icon.png",
+        "hash": "16832553434798453030"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-hdpi/logo.png",
+        "hash": "1936532413756774540"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-ldpi/background.png",
+        "hash": "11256936275069689301"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-ldpi/icon.png",
+        "hash": "15921725786582018249"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-ldpi/logo.png",
+        "hash": "1346385774809120272"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-mdpi/background.png",
+        "hash": "395544997981547266"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-mdpi/icon.png",
+        "hash": "2558857740923685093"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-mdpi/logo.png",
+        "hash": "3643236459576604931"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-nodpi/splash_screen.xml",
+        "hash": "4815778369250259624"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-xhdpi/background.png",
+        "hash": "7392158712081150515"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-xhdpi/icon.png",
+        "hash": "14801219997353105650"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-xhdpi/logo.png",
+        "hash": "1871957464522118899"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-xxhdpi/background.png",
+        "hash": "5906352349901720994"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-xxhdpi/icon.png",
+        "hash": "3431714187755244698"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-xxhdpi/logo.png",
+        "hash": "12208230719938166346"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-xxxhdpi/background.png",
+        "hash": "9903785663142809668"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-xxxhdpi/icon.png",
+        "hash": "12525178449758461101"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/drawable-xxxhdpi/logo.png",
+        "hash": "2242575050092644227"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/values-v21/colors.xml",
+        "hash": "10700162522355304320"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/values-v21/styles.xml",
+        "hash": "7946253689068145887"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/values/colors.xml",
+        "hash": "10266913474191527690"
+      },
+      {
+        "file": "tools/assets/App_Resources/Android/src/main/res/values/styles.xml",
+        "hash": "10388044271629727960"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/Contents.json",
+        "hash": "7074823972456290360"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+        "hash": "16831985223399638701"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-20.png",
+        "hash": "3513863678632624557"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-20@2x.png",
+        "hash": "15520030513722660034"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-20@3x.png",
+        "hash": "16873309334603701105"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29.png",
+        "hash": "14474622054505751185"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@2x.png",
+        "hash": "7686024325659141588"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@3x.png",
+        "hash": "16989283923670363606"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40.png",
+        "hash": "8489719219165204752"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@2x.png",
+        "hash": "3251760657385764290"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@3x.png",
+        "hash": "5848897579475767846"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@2x.png",
+        "hash": "5848897579475767846"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png",
+        "hash": "5477480868639419128"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76.png",
+        "hash": "10784484421628460484"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76@2x.png",
+        "hash": "14843904895184712169"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png",
+        "hash": "2764258062286063190"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/Contents.json",
+        "hash": "5990803069847060607"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/Contents.json",
+        "hash": "4943560409826843868"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill.png",
+        "hash": "5115822010397483273"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill@2x.png",
+        "hash": "2148044383503323197"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill@3x.png",
+        "hash": "8133725279672477351"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/Contents.json",
+        "hash": "11894936682669329415"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center.png",
+        "hash": "14831633371316968694"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center@2x.png",
+        "hash": "4534381510399367015"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center@3x.png",
+        "hash": "2398893233207846223"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Info.plist",
+        "hash": "11274453229936745485"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/LaunchScreen.storyboard",
+        "hash": "17562583915113397302"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/Podfile",
+        "hash": "18237172556155607507"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/build.xcconfig",
+        "hash": "3371925728455138306"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/icon.png",
+        "hash": "4101205758978515077"
+      },
+      {
+        "file": "tools/assets/App_Resources/iOS/icon@2x.png",
+        "hash": "13272090203283651171"
+      },
+      {
+        "file": "tools/assets/README.md",
+        "hash": "9600040672435811174"
+      },
+      {
+        "file": "tools/assets/publishing/.npmignore",
+        "hash": "10530275998617979064"
+      },
+      {
+        "file": "tools/demo/index.ts",
+        "hash": "3434171098731076767"
+      },
+      {
+        "file": "tools/demo/references.d.ts",
+        "hash": "14494203148244004188"
+      },
+      {
+        "file": "tools/demo/test-assets-android/index.ts",
+        "hash": "12437970344358279592"
+      },
+      {
+        "file": "tools/demo/tsconfig.json",
+        "hash": "11765934980219416416"
+      },
+      {
+        "file": "tools/demo/utils/demo-base.ts",
+        "hash": "9722764959201321305"
+      },
+      {
+        "file": "tools/demo/utils/index.ts",
+        "hash": "7328481759792315777"
+      },
+      {
+        "file": "tools/package-settings.json",
+        "hash": "5303088257885726941"
+      },
+      {
+        "file": "tools/schematics/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "tools/scripts/build-finish.ts",
+        "hash": "12782102459713375020"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "1725566018882278405"
+      },
+      {
+        "file": "tools/workspace-scripts.js",
+        "hash": "8228151842826770850"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "892206719627635893"
+      }
+    ]
+  }
+}

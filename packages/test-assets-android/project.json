@@ -1,0 +1,65 @@
+{
+  "name": "test-assets-android",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "packages/test-assets-android",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "options": {
+        "outputPath": "dist/packages/test-assets-android",
+        "tsConfig": "packages/test-assets-android/tsconfig.json",
+        "packageJson": "packages/test-assets-android/package.json",
+        "main": "packages/test-assets-android/index.d.ts",
+        "assets": [
+          "packages/test-assets-android/*.md",
+          "packages/test-assets-android/index.d.ts",
+          "LICENSE",
+          {
+            "glob": "**/*",
+            "input": "packages/test-assets-android/platforms/",
+            "output": "./platforms/"
+          }
+        ],
+        "dependsOn": [
+          {
+            "target": "build.all",
+            "projects": "dependencies"
+          }
+        ]
+      }
+    },
+    "build.all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["node tools/scripts/build-finish.ts test-assets-android"],
+        "parallel": false
+      },
+      "outputs": ["{workspaceRoot}/dist/packages/test-assets-android"],
+      "dependsOn": [
+        {
+          "target": "build.all",
+          "projects": "dependencies"
+        },
+        {
+          "target": "build",
+          "projects": "self"
+        }
+      ]
+    },
+    "focus": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx g @nativescript/plugin-tools:focus-packages test-assets-android"],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:eslint",
+      "options": {
+        "lintFilePatterns": ["packages/test-assets-android/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

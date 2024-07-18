@@ -55,12 +55,19 @@ module.exports = {
       },
     },
     '⚙️': {
-      script: `npx cowsay "@nativescript/* packages will keep your ⚙️ cranking"`,
-      description: '_____________  @nativescript/*  _____________',
+      script: `npx cowsay "@redmint/* packages will keep your ⚙️ cranking"`,
+      description: '_____________  @redmint/*  _____________',
     },
     // packages
     // build output is always in dist/packages
-    '@nativescript': {
+    '@redmint': {
+      // @redmint/test-assets-android
+      'test-assets-android': {
+        build: {
+          script: 'nx run test-assets-android:build.all',
+          description: '@redmint/test-assets-android: Build',
+        },
+      },
       'build-all': {
         script: 'nx run-many --target=build.all --all',
         description: 'Build all packages',
@@ -71,8 +78,12 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
+      'test-assets-android': {
+        script: 'nx run test-assets-android:focus',
+        description: 'Focus on @redmint/test-assets-android',
+      },
       reset: {
-        script: 'nx g @nativescript/plugin-tools:focus-packages',
+        script: 'nx g @redmint/plugin-tools:focus-packages',
         description: 'Reset Focus',
       },
     },
